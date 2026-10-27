@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+      <!-- Curved Chilli Body -->
+      <path d="M 50 60 C 90 60, 150 90, 160 150 C 140 140, 80 120, 45 75 Z" fill="#B91C1C" stroke="#DC2626" stroke-width="2.5"/>
+      <!-- Chilli Stem -->
+      <path d="M 45 75 C 35 60, 30 40, 40 30 C 45 35, 48 50, 50 60 Z" fill="#2E6B45"/>
+    </svg>

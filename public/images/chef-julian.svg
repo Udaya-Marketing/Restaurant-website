@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650" fill="none">
+    <defs>
+      <linearGradient id="chefBg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#162B24"/>
+        <stop offset="100%" stop-color="#080E0B"/>
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#chefBg)"/>
+    <circle cx="250" cy="240" r="100" fill="#283E36"/>
+    <circle cx="250" cy="210" r="70" fill="#E2BA96"/>
+    <path d="M 120 540 C 140 370, 200 330, 250 330 C 300 330, 360 370, 380 540 Z" fill="#0E1A15"/>
+    <path d="M 230 330 L 250 440 L 270 330 Z" fill="#D96B27"/>
+    <rect x="238" y="325" width="24" height="20" fill="#FFFFFF"/>
+    <text x="250" y="585" font-family="serif" font-size="28" fill="#FBF8F2" text-anchor="middle" font-weight="bold">Julian St. Clair</text>
+    <text x="250" y="615" font-family="sans-serif" font-size="16" fill="#C5A880" text-anchor="middle" letter-spacing="2">EXECUTIVE CHEF</text>
+  </svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" fill="none">
+    <defs>
+      <radialGradient id="plateShadow" cx="50%" cy="50%" r="50%">
+        <stop offset="60%" stop-color="#000000" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="plateRim" cx="45%" cy="40%" r="55%">
+        <stop offset="0%" stop-color="#24332D"/>
+        <stop offset="70%" stop-color="#17120C"/>
+        <stop offset="100%" stop-color="#080E0B"/>
+      </radialGradient>
+      <radialGradient id="plateWell" cx="50%" cy="48%" r="45%">
+        <stop offset="0%" stop-color="#1B2823"/>
+        <stop offset="85%" stop-color="#0D1613"/>
+        <stop offset="100%" stop-color="#080D0B"/>
+      </radialGradient>
+      <radialGradient id="sauceGlow" cx="48%" cy="46%" r="40%">
+        <stop offset="0%" stop-color="#E27D38" stop-opacity="0.9"/>
+        <stop offset="50%" stop-color="#C5A880" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+      <filter id="emberBlur">
+        <feGaussianBlur stdDeviation="3"/>
+      </filter>
+    </defs>
+
+    <!-- Outer shadow -->
+    <circle cx="300" cy="315" r="260" fill="url(#plateShadow)"/>
+
+    <!-- Ceramic Plate Rim with handmade tactile texture -->
+    <circle cx="300" cy="300" r="250" fill="url(#plateRim)" stroke="#384C44" stroke-width="2"/>
+    <circle cx="300" cy="300" r="248" fill="none" stroke="#C5A880" stroke-width="0.5" stroke-opacity="0.3"/>
+
+    <!-- Plate Center Well -->
+    <circle cx="300" cy="300" r="185" fill="url(#plateWell)" stroke="#1F2F29" stroke-width="1.5"/>
+
+    <!-- Sauce Swirl / Botanical Glaze -->
+    <path d="M 220 310 C 240 240, 360 230, 380 290 C 400 350, 270 380, 250 330 C 230 280, 330 270, 350 320" 
+          fill="none" stroke="#E27D38" stroke-width="14" stroke-linecap="round" stroke-opacity="0.85" filter="url(#softGlow)"/>
+    <path d="M 240 300 C 260 260, 340 250, 360 300 C 370 340, 290 360, 270 320" 
+          fill="none" stroke="#C5A880" stroke-width="4" stroke-linecap="round" stroke-opacity="0.9"/>
+
+    <!-- Concentric Herb Oil Drops -->
+    <circle cx="215" cy="275" r="7" fill="#4F675B" fill-opacity="0.9"/>
+    <circle cx="215" cy="275" r="3" fill="#88B8A0"/>
+    <circle cx="385" cy="255" r="9" fill="#4F675B" fill-opacity="0.9"/>
+    <circle cx="385" cy="255" r="4" fill="#88B8A0"/>
+    <circle cx="390" cy="355" r="6" fill="#4F675B" fill-opacity="0.9"/>
+    <circle cx="240" cy="380" r="8" fill="#4F675B" fill-opacity="0.9"/>
+    <circle cx="330" cy="390" r="5" fill="#E27D38" fill-opacity="0.8"/>
+    <circle cx="260" cy="225" r="5" fill="#E27D38" fill-opacity="0.8"/>
+
+    <!-- Main Course Centerpiece (Hearth-Roasted Centerpiece) -->
+    <g transform="translate(300, 295)">
+      <!-- Base protein / crust -->
+      <path d="M -75 -20 C -70 -65, 40 -80, 80 -35 C 95 10, 60 70, -20 65 C -75 60, -80 20, -75 -20 Z" 
+            fill="#3B261A" stroke="#1D120B" stroke-width="2"/>
+      
+      <!-- Caramelized roasted crust layer -->
+      <path d="M -60 -15 C -55 -50, 30 -65, 65 -25 C 75 10, 45 55, -15 50 C -60 45, -65 15, -60 -15 Z" 
+            fill="#5E371C"/>
+      
+      <!-- Sear Marks / Hearth Char -->
+      <line x1="-40" y1="-35" x2="30" y2="40" stroke="#180C05" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-20" y1="-50" x2="55" y2="20" stroke="#180C05" stroke-width="4.5" stroke-linecap="round"/>
+      <line x1="-55" y1="-15" x2="10" y2="55" stroke="#180C05" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- Golden Butter / Glaze Sheen -->
+      <ellipse cx="5" cy="-5" rx="35" ry="20" fill="#C5A880" fill-opacity="0.45" filter="url(#softGlow)"/>
+      <ellipse cx="-15" cy="15" rx="20" ry="10" fill="#FFDA9E" fill-opacity="0.6"/>
+
+      <!-- Garnish: Micro Sorrel Leaves & Spruce Tips -->
+      <path d="M -30 -10 C -45 -25, -35 -45, -20 -30 C -5 -15, -15 5, -30 -10 Z" fill="#4F675B"/>
+      <path d="M 25 15 C 40 5, 55 20, 35 35 C 15 50, 10 25, 25 15 Z" fill="#698D7C"/>
+      <path d="M 10 -30 C 25 -45, 45 -35, 30 -15 C 15 5, -5 -15, 10 -30 Z" fill="#4F675B"/>
+
+      <!-- Edible Flower Petal / Saffron Thread -->
+      <path d="M -5 -25 Q 15 -40 25 -25 Q 15 -10 -5 -25 Z" fill="#E27D38"/>
+      <path d="M 35 -5 Q 50 -15 55 5 Q 40 10 35 -5 Z" fill="#E2894B"/>
+
+      <!-- Caviar Pearls / Maldon Salt crystals -->
+      <circle cx="-10" cy="-2" r="3.5" fill="#141816" stroke="#4A5852" stroke-width="0.8"/>
+      <circle cx="-5" cy="-6" r="3.2" fill="#141816" stroke="#4A5852" stroke-width="0.8"/>
+      <circle cx="-12" cy="-9" r="3" fill="#141816" stroke="#4A5852" stroke-width="0.8"/>
+      <polygon points="12,18 16,16 18,20 14,22" fill="#FFFFFF" fill-opacity="0.85"/>
+      <polygon points="-22,12 -18,10 -17,14 -21,15" fill="#FFFFFF" fill-opacity="0.75"/>
+    </g>
+
+    <!-- Floating Herb Sprig Over Rim -->
+    <path d="M 420 380 Q 450 360 480 390 Q 455 410 420 380 Z" fill="#4F675B" fill-opacity="0.7"/>
+
+    <!-- Subtle Michelin Star Ring Embellishment -->
+    <circle cx="300" cy="300" r="240" fill="none" stroke="#C5A880" stroke-width="0.75" stroke-dasharray="4 12" stroke-opacity="0.4"/>
+  </svg>

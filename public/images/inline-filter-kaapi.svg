@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="48" fill="#18110B"/>
+      <!-- Davarah -->
+      <ellipse cx="50" cy="65" rx="34" ry="14" fill="#C5A059" stroke="#EAD498" stroke-width="2"/>
+      <!-- Tumbler -->
+      <path d="M 38 32 L 42 62 L 58 62 L 62 32 Z" fill="#DDB66B" stroke="#FCECC2" stroke-width="2"/>
+      <ellipse cx="50" cy="32" rx="12" ry="4" fill="#5A3215"/>
+      <!-- Foam -->
+      <ellipse cx="50" cy="31" rx="10" ry="3" fill="#FFF2DC"/>
+    </svg>

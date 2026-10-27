@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" fill="none">
+    <defs>
+      <radialGradient id="shadowGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="60%" stop-color="#000000" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#347854"/>
+        <stop offset="50%" stop-color="#1E4A32"/>
+        <stop offset="100%" stop-color="#143622"/>
+      </linearGradient>
+      <radialGradient id="brassGrad" cx="40%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="#F3DC9B"/>
+        <stop offset="45%" stop-color="#C5A059"/>
+        <stop offset="85%" stop-color="#805C22"/>
+        <stop offset="100%" stop-color="#462E0E"/>
+      </radialGradient>
+      <radialGradient id="clayGrad" cx="45%" cy="40%" r="60%">
+        <stop offset="0%" stop-color="#A75438"/>
+        <stop offset="60%" stop-color="#73321F"/>
+        <stop offset="100%" stop-color="#3C160B"/>
+      </radialGradient>
+      <radialGradient id="gheeSheen" cx="50%" cy="45%" r="40%">
+        <stop offset="0%" stop-color="#FFDD78" stop-opacity="0.9"/>
+        <stop offset="60%" stop-color="#EAA024" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+    </defs>
+
+    <!-- Outer shadow -->
+    <ellipse cx="300" cy="325" rx="260" ry="240" fill="url(#shadowGlow)"/>
+
+    <!-- Polished Brass Thali Plate -->
+    <circle cx="300" cy="300" r="240" fill="url(#brassGrad)" stroke="#FCECC2" stroke-width="3"/>
+    <circle cx="300" cy="300" r="236" fill="none" stroke="#6C4A16" stroke-width="1" stroke-dasharray="4 6"/>
+    <circle cx="300" cy="300" r="185" fill="#2E1B09" stroke="#9E7635" stroke-width="2"/>
+
+    <!-- Food Content / Dish Center -->
+    <ellipse cx="300" cy="300" rx="140" ry="120" fill="url(#gheeSheen)"/>
+
+    <!-- Dish Graphic Elements -->
+    <g transform="translate(160, 160)">
+      <!-- Central Specialty Artwork -->
+      <circle cx="140" cy="140" r="105" fill="#EAA024" fill-opacity="0.25"/>
+      
+      <!-- Steaming Food Shapes -->
+      <ellipse cx="140" cy="140" rx="85" ry="70" fill="#EAA024" stroke="#C5A059" stroke-width="2.5" filter="url(#softGlow)"/>
+      <ellipse cx="120" cy="125" rx="40" ry="32" fill="#FFFFFF" fill-opacity="0.15"/>
+
+      <!-- Fresh Curry Leaves & Podi Tempered Dots -->
+      <circle cx="105" cy="115" r="4" fill="#1C3826"/>
+      <circle cx="170" cy="130" r="3.5" fill="#1C3826"/>
+      <circle cx="145" cy="165" r="4" fill="#1C3826"/>
+      <circle cx="125" cy="155" r="3" fill="#D46213"/>
+      <circle cx="160" cy="105" r="3" fill="#D46213"/>
+      <circle cx="180" cy="150" r="2.5" fill="#D46213"/>
+      <circle cx="110" cy="140" r="2.5" fill="#FCECC2"/>
+      <circle cx="140" cy="120" r="2.5" fill="#FCECC2"/>
+
+      <!-- Curry Leaf Sprig -->
+      <path d="M 125 150 C 135 130, 155 125, 170 120 C 160 135, 145 145, 125 150 Z" fill="#245A3A" stroke="#488862" stroke-width="1"/>
+      <path d="M 140 160 C 150 145, 170 140, 185 142 C 172 155, 155 160, 140 160 Z" fill="#1E4D31" stroke="#3D7553" stroke-width="1"/>
+    </g>
+
+    <!-- Dish Title Plaque -->
+    <g transform="translate(300, 520)">
+      <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#18110B" fill-opacity="0.88" stroke="#C5A059" stroke-width="1.2"/>
+      <text x="0" y="-1" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#FAF7F2" letter-spacing="1">
+        GHEE RAVA KESARI
+      </text>
+      <text x="0" y="12" text-anchor="middle" font-family="'Noto Serif Tamil', Georgia, serif" font-size="10" fill="#C5A059">
+        நெய் ரவா கேசரி
+      </text>
+    </g>
+  </svg>

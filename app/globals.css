@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAF7F2;
+  --color-cream-surface: #F3EEE4;
+  --color-cream-border: #E5DCCD;
+  --color-pine: #122B1E;
+  --color-pine-light: #1E4230;
+  --color-pine-card: #183626;
+  --color-pine-border: #2B553F;
+  --color-leaf: #1E3A2B;
+  --color-leaf-deep: #122B1E;
+  --color-coffee: #18110B;
+  --color-coffee-card: #221912;
+  --color-obsidian: #100B07;
+  --color-charcoal: #14100C;
+  --color-accent: #D46213;
+  --color-accent-hover: #B94E07;
+  --color-accent-subtle: #FDF2E9;
+  --color-accent-glow: rgba(212, 98, 19, 0.25);
+  --color-saffron: #D46213;
+  --color-kumkum: #9E2A2B;
+  --color-brass: #C5A059;
+  --color-brass-muted: #9E7E38;
+  --color-gold: #C5A059;
+  --color-gold-muted: #9E7E38;
+  --color-sage: #3E5F4E;
+  --color-muted-slate: #828E87;
+
+  --font-display: var(--font-instrument), "Instrument Serif", Georgia, serif;
+  --font-body: var(--font-figtree), "Figtree", sans-serif;
+  --font-tamil: var(--font-noto-tamil), "Noto Serif Tamil", Georgia, serif;
+}
+
+:root {
+  --bg-cream: #FAF7F2;
+  --bg-dark: #122B1E;
+  --bg-noir: #100B07;
+  --color-accent: #D46213;
+  --color-accent-hover: #B94E07;
+  --color-gold: #C5A059;
+  --color-brass: #C5A059;
+  --color-leaf: #1E3A2B;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-cream);
+  color: #18110B;
+  font-family: var(--font-body);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-cream);
+  min-height: 100vh;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings Typography */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-display);
+  font-feature-settings: "cv01", "ss01";
+  text-wrap: balance;
+}
+
+/* Tamil Typography Accent with balanced line-height */
+.font-tamil {
+  font-family: var(--font-tamil);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.headline-hero {
+  font-size: clamp(2.75rem, 6.2vw, 5.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.headline-section {
+  font-size: clamp(2.25rem, 4.5vw, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+.subheading-editorial {
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.micro-label {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+/* Glassmorphism utility with banana-leaf teal base */
+.glass-panel {
+  background: rgba(18, 43, 30, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 220, 205, 0.75);
+}
+
+/* Kolam Line Pattern & Banana Leaf Motifs */
+.kolam-pattern-dark {
+  background-image: radial-gradient(circle at 1px 1px, rgba(197, 160, 89, 0.25) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.kolam-pattern-light {
+  background-image: radial-gradient(circle at 1px 1px, rgba(18, 43, 30, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.kolam-divider {
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 12px,
+    #C5A059 12px,
+    #C5A059 20px,
+    transparent 20px,
+    transparent 32px
+  );
+}
+
+.banana-leaf-radius {
+  border-radius: 40px 12px 40px 12px;
+}
+
+/* Marquee Animations */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 38s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 42s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee-left,
+.marquee-container:hover .animate-marquee-right {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Focus outline for WCAG accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #D46213;
+  outline-offset: 3px;
+}

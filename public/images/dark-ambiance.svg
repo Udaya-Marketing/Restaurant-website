@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <rect width="1920" height="1080" fill="#100B07"/>
+  <!-- Ambient glows of brass vilakku lamps -->
+  <radialGradient id="lampGlow1" cx="30%" cy="40%" r="40%">
+    <stop offset="0%" stop-color="#D46213" stop-opacity="0.35"/>
+    <stop offset="60%" stop-color="#C5A059" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="lampGlow2" cx="75%" cy="50%" r="45%">
+    <stop offset="0%" stop-color="#D46213" stop-opacity="0.30"/>
+    <stop offset="60%" stop-color="#122B1E" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#lampGlow1)"/>
+  <rect width="1920" height="1080" fill="url(#lampGlow2)"/>
+  
+  <!-- Subtle Kolam Dot Grid Background -->
+  <g opacity="0.08" stroke="#C5A059" stroke-width="1.5">
+    <circle cx="100" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="100" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="100" cy="600" r="2" fill="#C5A059"/><circle cx="215" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="215" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="215" cy="600" r="2" fill="#C5A059"/><circle cx="330" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="330" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="330" cy="600" r="2" fill="#C5A059"/><circle cx="445" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="445" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="445" cy="600" r="2" fill="#C5A059"/><circle cx="560" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="560" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="560" cy="600" r="2" fill="#C5A059"/><circle cx="675" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="675" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="675" cy="600" r="2" fill="#C5A059"/><circle cx="790" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="790" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="790" cy="600" r="2" fill="#C5A059"/><circle cx="905" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="905" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="905" cy="600" r="2" fill="#C5A059"/><circle cx="1020" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1020" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1020" cy="600" r="2" fill="#C5A059"/><circle cx="1135" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1135" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1135" cy="600" r="2" fill="#C5A059"/><circle cx="1250" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1250" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1250" cy="600" r="2" fill="#C5A059"/><circle cx="1365" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1365" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1365" cy="600" r="2" fill="#C5A059"/><circle cx="1480" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1480" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1480" cy="600" r="2" fill="#C5A059"/><circle cx="1595" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1595" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1595" cy="600" r="2" fill="#C5A059"/><circle cx="1710" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1710" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1710" cy="600" r="2" fill="#C5A059"/><circle cx="1825" cy="540" r="2" fill="#C5A059"/>
+       <circle cx="1825" cy="480" r="2" fill="#C5A059"/>
+       <circle cx="1825" cy="600" r="2" fill="#C5A059"/>
+  </g>
+
+  <!-- Brass Lamp Silhouettes -->
+  <g transform="translate(450, 420)" opacity="0.45">
+    <ellipse cx="0" cy="180" rx="45" ry="12" fill="#C5A059"/>
+    <rect x="-6" y="20" width="12" height="160" fill="#C5A059"/>
+    <ellipse cx="0" cy="20" rx="30" ry="8" fill="#C5A059"/>
+    <!-- Flame -->
+    <path d="M 0 -10 C 10 5, 6 15, 0 20 C -6 15, -10 5, 0 -10 Z" fill="#FCECC2"/>
+  </g>
+  <g transform="translate(1450, 460)" opacity="0.4">
+    <ellipse cx="0" cy="180" rx="45" ry="12" fill="#C5A059"/>
+    <rect x="-6" y="20" width="12" height="160" fill="#C5A059"/>
+    <ellipse cx="0" cy="20" rx="30" ry="8" fill="#C5A059"/>
+    <!-- Flame -->
+    <path d="M 0 -10 C 10 5, 6 15, 0 20 C -6 15, -10 5, 0 -10 Z" fill="#FCECC2"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="98" fill="#18110B" stroke="#D46213" stroke-width="4"/>
+    <circle cx="100" cy="80" r="38" fill="#E8D1B5"/>
+    <path d="M 45 175 C 55 130, 80 120, 100 120 C 120 120, 145 130, 155 175 Z" fill="#D46213"/>
+    <!-- Monogram / Initial Badge -->
+    <circle cx="145" cy="145" r="22" fill="#18110B" stroke="#C5A059" stroke-width="2"/>
+    <text x="145" y="152" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#FAF7F2">
+      K
+    </text>
+  </svg>
